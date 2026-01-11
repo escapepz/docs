@@ -1,0 +1,10 @@
+	local mx = getMouseX()
+	local my = getMouseY()
+
+	local z = player:getZ()
+
+	local wx, wy = ISCoordConversion.ToWorld(mx, my, z)
+	if not wx or not wy then return end
+
+	local x = math.floor(wx)
+	local y = math.floor(wy)

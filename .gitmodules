@@ -1,0 +1,4 @@
+[submodule "02_Community_Unofficial/Common/PZ-Mod---Doc"]
+	path = 02_Community_Unofficial/Common/PZ-Mod---Doc
+	url = https://github.com/MrBounty/PZ-Mod---Doc.git
+	branch = main

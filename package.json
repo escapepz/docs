@@ -1,0 +1,16 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "description": "Project Zomboid Documentation Archive (The LUA Part)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/escapepz/docs"
+    },
+    "scripts": {
+        "install": "git clone --recurse-submodules https://github.com/escapepz/docs",
+        "update": "git pull --recurse-submodules && git submodule update --init --recursive"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+}

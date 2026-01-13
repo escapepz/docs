@@ -1,0 +1,72 @@
+source: https://theindiestone.com/forums/index.php?/topic/89477-42131-unstable-hotfix-released/
+
+This patch is now available on the Unstable Steam Beta.
+
+Instructions: Right-Click game in Steam library -> Properties -> Click “Betas” tab -> Select “Unstable” from the Beta Participation Dropdown Menu.
+ 
+
+MP save games from 42.13.0 will not be compatible. 
+
+ 
+
+
+FIXES
+
+ 
+
+- Fixed loot not respawning in MP
+- Fixed severe stutters in MP sessions
+- Fixed server crashes caused by colliding with an animal while inside a safehouse
+- Fixed IsoChunk.soundList not clearing when chunks are reused, leading to zombies following players to other towns.
+- Fixed Nimble skill not progressing in MP
+- Fixed wrong multipliers being applied to skills
+- Fixed foraging zones not being created 
+- Fixed Foraging XP gain being abnormally high 
+- Fixed corpses not being transferred into containers properly in MP
+- Fixed extended placement of items for MP
+- Fixed Organized/Disorganized traits not having effect in MP
+- Fixed Endurance recovery speed not changing while seated
+- Fixed missing Wakeful, Sleepyhead, Restless Sleeper
+- Fixed Host Settings UI scaling issue on some resolutions
+- Fixed VHS/TVs not giving XP to players in MP
+- Fixed a desync issue when a remote player reconnects to the server, the weapon in their hands will not be displayed.
+- Fixed not being able to fast-forward sleep in vehicles in MP
+- Fixed not being able to remove servers from Favorites
+- Fixed not being able to sleep on the ground
+- Fixed disappearing animal corpses when destroying Butchering Hook 
+- Fixed server side exception when performing “Attach Animal to Rope”
+- Fixed exception with weapon upgrades
+- Fixed an exception with drying racks (drying racks are still WIP)
+- Fixed exception when trying to start an engine while there is no battery installed
+- Fixed errors when double-clicking on empty containers in inventory
+- Fixed Ratchet Wrench causing error when taking Engine Parts.
+- Fixed animal duping in inventory after relogging 
+- Fixed animal dupe in Livestock Trailers 
+- Fixed dropping a heavy backpack you don't have room to carry in main inventory leaveing a copy in inventory 
+- Fixed the bug when being overencumbered, selecting the "extra option" of Worn Clothing drops a duplicate item on the ground 
+- Fixed not being able to run over animals 
+- Fixed animals spawn on trap check 
+- Fixed not being able to kill a small animal while holding it in hands
+- Fixed animals pathfinding after being dropped to the ground 
+- Fixed troughs not having food upon the first visit to a default livestock zone
+- Fixed Specific timed actions giving errors (using Dice, Card Deck, Dented Can, Unlabeled Can)
+- Fixed Water capacity bar locking on 1L when filling, leading to not being able to create Stews etc 
+- Fixed character gaining the Strength XP while seated in a vehicle
+- Fixed Generator SFX remaining after turning it off
+- Fixed being unable to pick up a Generator that was dropped while entering the vehicle
+- Fixed not being able to place Generator and other furniture on seats in vehicles in MP
+- Fixed not being able to pick up some stuff from disassembled furniture 
+- Fixed not saving the lock status on the handcraft UI  
+- Fixed partially consumed food items still being displayed as full in the UI
+- Fixed padding information not updating on unequipped clothing items
+- Fixed disappearing favorite, unusable and unwanted tags 
+- Fixed vehicles getting stuck in the air after collisions
+- Fixed zeds no longer ragdolling
+- Fixed zombies wanting to pathfind around fences instead of vaulting them.
+- Fixed "Destroy" not working for multitile objects
+- Fixed chickens disappearing in hutches after relog
+- Fixed map annotations being removed after relogging
+- Fixed players failing to connect to Host with names that contained symbols
+- Fixed being able to open locked garage doors
+- Fixed the order of clothing layers for mod creators
+- Fixed a case of the Chickenpocalypse 

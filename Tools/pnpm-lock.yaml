@@ -1,0 +1,68 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      node-poppler:
+        specifier: ^9.1.0
+        version: 9.1.0
+    devDependencies:
+      prettier:
+        specifier: ^3.7.4
+        version: 3.7.4
+
+packages:
+
+  camelcase@6.3.0:
+    resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
+    engines: {node: '>=10'}
+
+  ice-barrage@1.0.0:
+    resolution: {integrity: sha512-xdp/aktysCDxBasbht01dMC2oSgmM4PrQITSCFdBjsxop4ZO1FwNIEEb+wGNSCUp/+8mz/lnkLR2pc4F9ubgIw==}
+    engines: {node: '>=20'}
+
+  node-poppler-win32@1.0.2:
+    resolution: {integrity: sha512-U2YVdM7EEXNE21TD4ajJxfd1pKx7yEF2tcuHc4eCa7uxmw+mfSNPB+yHRtNrdxJqV6dKoz4Rvhuyy5rn6mg3ZA==}
+    engines: {node: '>=20'}
+    cpu: [x64]
+    os: [win32]
+
+  node-poppler@9.1.0:
+    resolution: {integrity: sha512-PVoAImqN4+fmvEyxMqm7bZxaRVEa6vz1H1HqKJW7pMXmnGQ9OYbZNHmyiyjOonboCeEnVfjdXzXYyrt09xr3Tg==}
+    engines: {node: '>=20'}
+
+  prettier@3.7.4:
+    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+snapshots:
+
+  camelcase@6.3.0: {}
+
+  ice-barrage@1.0.0: {}
+
+  node-poppler-win32@1.0.2:
+    optional: true
+
+  node-poppler@9.1.0:
+    dependencies:
+      camelcase: 6.3.0
+      ice-barrage: 1.0.0
+      semver: 7.7.3
+    optionalDependencies:
+      node-poppler-win32: 1.0.2
+
+  prettier@3.7.4: {}
+
+  semver@7.7.3: {}

@@ -1,0 +1,24 @@
+{
+    "name": "pz-tools",
+    "version": "1.0.0",
+    "description": "PDF extraction and Markdown conversion tools",
+    "main": "extract-text.js",
+    "type": "commonjs",
+    "scripts": {
+        "extract": "node extract-text.js",
+        "convert": "node text-to-md.js",
+        "pipeline": "bash extract-all.sh",
+        "format": "prettier --write \"../**/*.md\" \"!../Tools/**\""
+    },
+    "dependencies": {
+        "node-poppler": "^9.1.0"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^3.7.4"
+    }
+}

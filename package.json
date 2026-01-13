@@ -11,6 +11,6 @@
         "update": "git pull --recurse-submodules && git submodule update --init --recursive"
     },
     "keywords": [],
-    "author": "",
+    "author": "escapepz",
     "license": "MIT"
 }

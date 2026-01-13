@@ -8,7 +8,8 @@
         "extract": "node extract-text.js",
         "convert": "node text-to-md.js",
         "pipeline": "bash extract-all.sh",
-        "format": "prettier --write \"../**/*.md\" \"!../Tools/**\""
+        "format": "prettier --write \"../**/*.md\" \"!../Tools/**\"",
+        "format:check": "prettier --check \"../**/*.md\" \"!../Tools/**\""
     },
     "dependencies": {
         "node-poppler": "^9.1.0"

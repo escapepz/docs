@@ -255,7 +255,7 @@ The `clothing` folder is used to define clothing items via the use of XML files.
 
 ### models_X
 
-_Main article: [model (scripts)](<https://pzwiki.net/wiki/Model_(scripts)> "Model (scripts)")_
+_Main article: [model (scripts)](<https://pzwiki.net/wiki/Model_(scripts)> "Model (scripts)")\_
 
 The `models_X` folder is used to store model files. The files need to be either in the DirectX format ( `.x` ) or Filmbox format ( `.fbx` ). They can be put in subfolders for organization and can replace files with the same relative path. See the [File formats](https://pzwiki.net/wiki/File_formats#Modeling_and_animation_formats "File formats") page for more detail.
 

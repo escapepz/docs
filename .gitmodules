@@ -2,3 +2,7 @@
 	path = 02_Community_Unofficial/Common/PZ-Mod---Doc
 	url = https://github.com/MrBounty/PZ-Mod---Doc.git
 	branch = main
+[submodule "02_Community_Unofficial/Common/PZModdingGuides"]
+	path = 02_Community_Unofficial/Common/PZModdingGuides
+	url = https://github.com/demiurgeQuantified/PZModdingGuides.git
+	branch = main

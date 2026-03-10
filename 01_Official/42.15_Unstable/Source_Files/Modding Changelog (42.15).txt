@@ -1,0 +1,66 @@
+Modding Changelog (42.15)
+Changelog
+The format for storing translation files has been changed. Now it's .json files in
+UTF-8 . All mods, that have translation files, need update them.
+Added support for translation mod.info . Now it's possible to add translation for name
+and description of mod. This translation will be loaded even if mod is disabled. Also
+fixed translation for map.info .
+For add translation for mod.info need create Mod.json file with translations for
+name and description (check the mod example).
+Fixed bugs with connecting to servers with mods.
+Fixed bug with mod folder detection. Now required only 1 subfolder with mod.info . It
+can be common or VERSION folder. Also fixed bug with empty common / VERSION folders.
+Added support of Translation mods. This is special kind of mod, that contain ONLY
+translation files in media dir ( .json or .txt files in media/lua/shared/Translate/ ).
+With this kind of mod is possible connect to any server (even to server without mods).
+Сheck the mod example.
+Added .glb format for file watcher (dynamic detection of changes in file).
+Fixed bug with Workshop description id duplication.
+Added support 512x512 preview image for Workshop Item.
+Changed ModID system (now it in format MOD_ID (like in 41), not
+WORKSHOP_ID\MOD_ID ). Added backward compatibility for \MOD_ID values
+( require , incompatible , ActiveMods, etc), but we recommend update the ID
+format in your mods.
+Fixed WorkshopID bug.
+Updated Mod Info Panel in ModManager. Added mod source detection
+(Mods/Workshop/Steam).
+Changed allowed URLs in mod.info .
+Fixed bug with filenames for poster/icon in mod.info on Linux (like icon.png ).
+
+Migration Guide
+Updating translation files
+The format for storing translation files has been changed. Now it's .json files in UTF-8 . All
+mods, that have translation files, need update translation files. (old .txt translation files is
+not supported now).
+
+How to update Translation files
+
+1. Convert files to UTF-8 encoding (if need).
+2. Transfer data to .json format (manually or by script). Examples you can check in game
+files or in Example Translation Mod .
+
+Mod/Workshop IDs
+Changed ModID system (now it in format MOD_ID (like in 41), not WORKSHOP_ID\MOD_ID ).
+Added backward compatibility for \MOD_ID values ( require , incompatible , ActiveMods,
+etc), but we recommend update the ID format in your modifications.
+
+How to update
+In require , incompatible , loadModAfter , loadModBefore need update values. It
+must be just PARAM=MOD_ID1,MOD_ID2,MOD_ID3,... , WITHOUT \ and WITHOUT
+WORKSHOP_ID .
+In server settings param Mods= need update in same way.
+
+Tips
+How to change mod source priority (Workshop, Mods, Steam)
+For example, you have same mod in 3 different folders: .../Zomboid/mods/ ,
+.../Zomboid/Workshop/... and .../workshop/content/108600/... ). Game will
+load only 1 version of this mod, because they have same MOD_ID . By default game
+checks folders in this order: workshop,steam,mods . So, will be loaded version from
+Workshop folder.
+You can change this order and remove some sources. To do this, you only need to add
+an arguments -modfolders mods,workshop,steam when launching the game (like debug arg). You can do it in Steam game options or you can create app shortcut and
+add this argument in shortcut options (you can do few shorcuts with different options).
+Examples: -modfolders mods,workshop,steam , -modfolders workshop,steam,mods ,
+-modfolders mods,workshop , -modfolders workshop
+
+
